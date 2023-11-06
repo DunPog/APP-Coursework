@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Straight-Faced Funnies</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+
+<body>
+	<!-- Navbar -->
+	<div>
+		<h1 id="home">Straight-Faced Funnies</h1>
+		<!-- navbar links -->
+		<div class="navbar">
+      <a class="navbarItem" href="#quickJoke">QUICK JOKE</a>
+			<a class="navbarItem" href="#tbloj">THE BIG LIST OF JOKES</a>
+      <a class="navbarItem" href="#addJokeJump">ADD JOKE</a>
+      <a class="navbarItem" href="#deleteJokeJump">DELETE JOKE</a>
+		</div>
+	</div>
+
+    <!-- Random Joke Section -->
+    <h2 id="quickJoke">Want a quick laugh?</h2>
+
+    <div class="randomJokeStyle" id="randomJoke">
+    <button type="button" onclick="randomJoke()">Click Me!</button>
+    </div>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!-- Joke Section -->
+    <div id="jokes">
+        <h2>Jokes</h2>
+        <div>
+            <h3 id="tbloj">The Big List of Jokes</h3>
+            <p>Click on a joke to select it and view it's details below!</p>
+            <ol id="listJokes">
+              <li>item 1</li>
+              <li>item 2</li>
+            </ol>
+        </div>
+        <br>
+        <div>
+          <button class="buttonStyle" id="btnUploadJokes">Upload Humour</button>
+        </div>
+      
+        <div id="jokeItem">
+          <h3 id="deleteJokeJump">Selected Joke</h3>
+            <div>
+                <div><label for="idEntry">ID: </label>
+                <input type="text" id="idEntry" disabled></div>
+                <div><label for="dateEntry">Upload Date: </label>
+                <input type="text" id="dateEntry" disabled></div>
+                <div><label for="titlEntry">Joke Title: </label>
+                <input type="text" id="titlEntry" disabled></div>
+                <div><label for="jokeDesc">Joke: </label>
+                <textarea id="jokeDesc" name="jokeDesc" rows="4" cols="50" disabled></textarea></div>
+            </div>
+        </div>
+        <div>
+          <p>If this joke didn't make you laugh, press the delete button!</p>
+          <div> <button class="buttonStyle" id="btnDeleteJoke">Delete</button></div>
+        </div>
+    
+    <!-- Add Joke Section -->
+    <div id="addItem" >
+            <h3 id="addJokeJump">Add Joke</h3>
+            <p>Feel free to add your own joke in this section!</p>
+            <div>
+                <div><label for="idEntry">ID:</label>
+                <input type="text" id="idAdd" value="Auto Generated" disabled required></div>
+                <div><label for="dateEntry">Upload Date: </label>
+                <input type="text" id="dateAdd" value="Auto Generated" disabled  required></div>
+                <div><label for="titleEntry">Joke Title: </label>
+                <input type="text" id="titleAdd" required></div>
+                <label for="jokeEntry">Joke: </label>
+            <textarea id="jokeAdd" name="jokeAdd" rows="4" cols="50" required></textarea>
+        </div>
+        <div>
+          <button class="buttonStyle" id="btnAddJoke">Add</button>
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+    </div>
+    </div>
+    <!-- Footer -->
+    <footer>
+      <a href="#home">To The Top</a>
+    </footer>
+
+<script src="static/scripts/app.js"></script>
+</body>
+</html>
